@@ -1,0 +1,55 @@
+.Homepage
+{
+	background-color: var(--primary);
+	background-image: url('../images/sunrise.png');
+	width:100%;
+	height:auto;
+	background-size:cover;
+	background-repeat: no-repeat;
+	color:white;
+	padding-bottom:14%;
+}
+.container header
+{
+	padding-top:10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 7%;
+}
+
+header .ul-class .li-class 
+{
+	margin: 5px 20px;
+}
+header .ul-class .li-class a
+{
+   text-decoration: none;
+   color:white;
+}
+.container .hometext
+{
+	font-size:15px;
+}
+.AboutUspage
+{
+ width:100%;
+ background-color: var(--primary);
+ height:auto;
+ padding-top:5% 0;
+}
+.aboutus-card
+{
+	padding: 10px;
+}
+.WhyUs
+{
+	padding:5% 0;
+	background-color:#294e6d;
+	color:#fff;
+}
+
+.footerpart1
+{
+	background-color: #294e6d;
+}

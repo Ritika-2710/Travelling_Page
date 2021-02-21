@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>IndexPage</title>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>	  
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="../css/basic.css">
+	  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<style type="text/css">
+	.container header .ul-class
+{
+    display: flex;
+	justify-content:center;
+	align-items: center;	
+	flex-direction: row;
+    list-style-type: none;
+
+}
+
+
+@media screen and (max-width:1200px)
+{
+   .Homepage .homepage-heading
+	{
+         font-size: 2.5rem;
+	}
+
+}
+@media screen and (max-width:991px) 
+{
+   
+   .Homepage .homepage-para
+	{
+		font-size:15px;
+		padding-right:37%;
+	}
+	.Homepage #homepage-image
+	{
+		width: 90%;
+		padding-top: 30px;
+	}			
+}
+	
+@media screen and (max-width: 450px)
+{
+	.Homepage .homepage-heading
+	{
+         font-size: 2rem;
+	}
+	.Homepage .homepage-para
+	{
+		font-size:13px;
+	}
+	.Homepage #homepage-image
+	{
+		padding-top: 30px;
+	}
+    .AboutUspage .button
+	{
+		margin-bottom: 13%;
+	}
+	.aboutuspara #aboutus-heading
+	{
+		font-size:2rem;
+		font-weight: 600;
+	}
+
+	
+}		
+#icon1,#icon2
+{
+	display: none;
+}
+.container header .menu{
+	transition: 1s ease;
+}
+
+@media screen and (max-width:800px)
+{
+	#icon2{
+		display: block;
+		position: absolute;
+		right: 0;
+		margin-right: 15px;
+		margin-top: 15px;
+		font-size: 17px;
+	}
+	.container header .menu
+	{
+		display: block;
+	    height: 100vh;
+	    width: 100vw;
+	    position: fixed;
+	    top: 0;
+	    left: -200%;
+		background:#000;
+		opacity: 0.9;
+		z-index: 999;
+	}
+	.container header .menu.active
+	{
+		left: 0;
+	}
+	.container header .ul-class{
+		display: block;
+		top: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.container header .ul-class li{
+		margin-top: 30px;
+		text-align: center;
+	}
+	.container header .ul-class li:first-child{
+		margin-top:0;
+	}
+
+	.Homepage #icon1
+	{
+		display: block;
+	}
+}
+</style>
+<section class="Homepage">
+	<div class="container">
+		<header>
+			<div class="logo">ByFaith</div>
+			<div id="icon1">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="menu">
+				<div id="icon2">
+					<i class="fa fa-times"></i>
+				</div>
+				<ul class="ul-class">
+					<li class="li-class"><a class="active" href="/">Home</a></li>
+					<li class="li-class"><a href="/">Sermons</a></li>
+					<li class="li-class"><a href="/">Ministries</a></li>
+					<li class="li-class"><a href="/">Events</a></li>
+					<li class="li-class"><a href="/">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="row d-flex justify-content-center align-items-center">
+			<div class="col-md-5 col-lg-5" style="padding-right:9%; ">
+				<p class="hometext">WELCOME TO BYFAITH CHURCH</p>
+				<h2 class="font-mont homepage-heading">Oh Safe To the Rock<br/>That is Higher Than I</h2>
+				<div style="height:10px"></div>
+				<p class="font-nunito homepage-para">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p><div style="height:20px"></div>
+				   <button class="button">GO TO SERMONS</button>
+			</div>
+			<div class="col-md-2 col-lg-2"></div>
+			<div class="col-md-5 col-lg-5" id="homepage-image">
+				<img src="../images/image1.jpg" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	.common-heading
+	{
+		font-weight: 700;
+		color:var(--secondary);
+	}
+	.AboutUspage
+	{
+		padding:5% 0;
+	}
+	.AboutUspage .aboutuspara
+	{
+		padding-right:9%;
+		text-align: left;
+	}
+	.Aboutus-secondphase
+	{
+		margin-top: 3%;
+	}
+	.Aboutus-para
+	{
+		font-size: 13px;
+		padding-right: 23px;
+	}
+	.aboutus-card
+	{
+		padding:15px;
+	}
+
+	.AboutUspage .image
+	{
+		width:100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius:5px;
+	}
+	
+
+	.AboutUspage .aboutuspara p
+		{
+			font-size: 13px;
+		}
+	@media screen and (min-width: 1200px)
+	{
+        .image-adjust
+		{
+			    height: 240px;
+			    padding: 5px;
+			    width: 100%;
+		}
+	}
+	@media screen and (max-width:1200px)
+	{
+        	.AboutUspage .aboutuspara
+			{
+				padding-right:0;
+			}		
+	}
+	@media screen and (min-width: 991px) and  (max-width: 1200px)
+	{
+		.image-adjust
+		{
+			width:70%;
+		}
+	}
+    
+	@media screen and (max-width: 991px)
+	{
+		.aboutus-heading
+		{
+			font-size:2rem;
+		}
+		.AboutUspage .aboutuspara p
+		{
+			font-size: 15px;
+			padding-right: 20%;
+		}
+		.AboutUspage .image
+		{
+			width:100%;
+			padding-top: 30px;
+		}
+	}
+</style>
+<section class="AboutUspage">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-lg-4">
+				<div class="aboutuspara">
+					<h5 class="font-mont common-heading">About Us</h5>
+					<h2 class="font-mont" id="aboutus-heading">Living ans sharing <br/> The Gospel</h2>
+					<div style="height:10px;"></div>
+					<p class="font-nunito text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+				    <div style="height:10px;"></div>
+				  	<p class="font-nunito text-muted"> A small river name Duden flows by their place and supplies it with the necessary regelialia.It is a Paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+				   <div style="height:10px;"></div>
+				   <button class="button">Know More About Us</button>
+				</div>
+			</div>
+			<div class="col-md-3 col-lg-3"></div>
+			<div class="col-md-5 col-lg-5">
+				<img src="../images/image1.jpg" class="image">
+			</div>
+		</div>
+		<div class="row Aboutus-secondphase">
+			<div class="col-lg-12">
+				<h6 class="font-mont common-heading"><center>SERMONS</center></h6>
+			</div>
+			<div class="col-lg-12">
+				<h3 class="font-mont" style="font-weight:600"><center>Recent Sermons</center></h3>
+			</div>
+		</div>
+		<div style="height:15px;"></div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="image-adjust">
+				  <img src="../images/partyimage1.jpg" class="image">
+			    </div>
+				<div class="aboutus-card">
+				   <div style="height:8px;"></div>
+					<div class="smallpart text-muted font-nunito" style="font-size:13px;">15 Jan 2020<span style="padding:10px;"><i class="fa fa-circle" aria-hidden="true" style="font-size:8px;"></i></span> By Pastor Campbell</div>
+					<h4 class="font-mont">Living and sharing the Gospel</h4>
+					<p class="text-muted font-nunito Aboutus-para" style="font-size:13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia</p>
+				</div>
+				<div style="height:15px;"></div>
+				<button class="button">READ MORE</button>
+			</div>
+			<div class="col-lg-4">
+				<div class="image-adjust">
+				  <img src="../images/book1.jpg" class="image">
+				</div>
+				<div class="aboutus-card">
+				   <div style="height:8px;"></div>
+					<div class="smallpart text-muted font-nunito" style="font-size:13px;">15 Jan 2020
+						<span style="padding:10px;">
+						<i class="fa fa-circle" aria-hidden="true" style="font-size:8px;"></i>
+					</span> By Pastor Campbell</div>
+					<h4 class="font-mont">Living and sharing the Gospel</h4>
+					<p class="text-muted font-nunito Aboutus-para" style="font-size:13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia</p>
+				</div>
+				<div style="height:15px;"></div>
+				<button class="button">READ MORE</button>
+			</div>
+			<div class="col-lg-4">
+				<div class="image-adjust">
+				  <img src="../images/partyimage2.jpg" class="image">
+			    </div>
+				<div class="aboutus-card">
+				   <div style="height:8px;"></div>
+					<div class="smallpart text-muted font-nunito" style="font-size:13px;">15 Jan 2020<span style="padding:10px;"><i class="fa fa-circle" aria-hidden="true" style="font-size:8px;"></i></span> By Pastor Campbell</div>
+					<h4 class="font-mont">Living and sharing the Gospel</h4>
+					<p class="text-muted font-nunito Aboutus-para" style="font-size:13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia</p>
+				</div>
+				<div style="height:15px;"></div>
+				<button class="button">READ MORE</button>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	.WhyUs #Whyus-heading
+	{
+		padding:16px 0;
+		padding-right:16px;
+	}
+	#Whyus-para
+	{
+        margin-top:20px;
+		padding-top:16px;
+	}
+	.WhyUs .phoneview
+	{
+		height:40px;
+	}
+	.WhyUs .image
+	{
+		width: 100%;
+	}
+	.WhyUs .whyus-secondpara
+		{
+			font-size: 13px;
+			color:#f0f0f099;
+		}
+	@media screen and (min-width: 1200px)
+	{
+		.WhyUs .button_row button
+		{
+			margin-left: 10px;
+		}
+	}
+	@media screen and (max-width:1199px)
+	{
+		.WhyUs .whyus-secondheading
+		{
+			font-size:2rem;
+		}
+		.WhyUs .Whyus-part2
+		{
+			padding:0;
+		}
+		.WhyUs .phoneview
+		{
+			height: 30px;
+		}
+		.WhyUs .whyus-secondpara
+		{
+			font-size: 15px;
+		}
+		.WhyUs #colpadding
+		{
+			padding-top: 40px;
+		}
+		.WhyUs .button_row
+		{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	@media screen and (max-width: 991px)
+	{
+	   .WhyUs .Whyus-part2
+		{
+			padding-top:30px;
+			padding-left:15px;
+			padding-right: 15px;
+		}	
+		.WhyUs .button_row
+		{
+			display: inline-block;
+		}
+	}
+	@media screen and (max-width:450px)
+	{
+		.WhyUs .Whyus-part2
+		{
+			padding-top:30px;
+		}
+		.WhyUs .phoneview
+		{
+			height: 30px;
+		}
+		.WhyUs .whyus-secondpara
+		{
+			font-size: 13px;
+		}
+		.WhyUs .button
+		{
+			margin-top:4%;
+			margin-bottom: 13%;
+			margin-left: 15px;
+		}
+		.Whyus .image
+		{
+			width:90%;
+		}
+	}
+</style>
+<section class="WhyUs">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h6 class="font-mont common-heading">WHY US</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-lg-5">
+				<h2 class="font-mont" id="Whyus-heading">You matter to God,You matter to us.</h2>
+			</div>
+			<div class="col-md-1 col-lg-1"></div>
+			<div class="col-md-5 col-lg-5">
+				<p class="font-nunito" id="Whyus-para">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			</div>
+		</div>
+		<div class="phoneview"></div>
+		<div class="row">
+			<div class="col-lg-5">
+				<img src="../images/image1.jpg" class="image">
+			</div>
+			<div class="col-lg-1"></div>
+			<div class="col-lg-5" id="colpadding">
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<h5 class="font-nunito whyus-secondheading">PEACE WITH GOD</h5>
+						<p class="font-nunito whyus-secondpara">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia.</p>
+					</div>
+					<div class="col-md-6 col-lg-6 Whyus-part2">
+						<h5 class="font-nunito whyus-secondheading">RELATIONSHIP FOR THE SOUL</h5>
+						<p class="font-nunito whyus-secondpara">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia.</p>
+					</div>
+				</div>
+				<div class="phoneview"></div>
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<h5 class="font-nunito whyus-secondheading">IDENTIFYING LIMITATIONS</h5>
+						<p class="font-nunito whyus-secondpara">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia.</p>
+					</div>
+					<div class="col-md-6 col-lg-6 Whyus-part2">
+						<h5 class="font-nunito whyus-secondheading">HIS KINGDOM</h5>
+						<p class="font-nunito whyus-secondpara">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia.</p>
+					</div>
+				</div>
+				<div style="height:40px;"></div>
+				<div class="row button_row">
+					<button class="button">SEND US YOUR PRAYER REQUEST</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	.carousel
+	{
+		background:var(--primary);
+	}
+	.carousel-cell
+	{
+		width:45%;
+		height:auto;
+		margin:0 50px;
+		background-color: white;
+		counter-increment: carousel-cell;
+		box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:20px 50px;
+        text-align: center;
+	}
+	.carousel-text
+	{
+		font-size:14px;
+		margin-top: 15px;
+	}
+	.flickity-page-dots 
+	{
+		margin-bottom: -63px;
+	}
+	@media screen and (max-width:991px)
+	{
+	  .flickity-page-dots 
+	{
+		margin-bottom: -25px;
+	}	
+
+	}
+	.flickity-page-dots .dot
+	{
+		display: inline-block;
+	    width: 7px;
+	    height: 7px;
+	    margin: 0 6px;
+	    background: #333;
+	    border-radius: 50%;
+	    opacity: .25;
+	    cursor: pointer;
+	}
+	.innercarousel
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.carousel-circle
+	{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-image: url(../images/userimage.jpg);
+		background-size: cover;
+		margin-top: 10px;
+	}
+	.Testimonials
+	{
+		background-color:var(--primary);
+		width:100%;
+		padding-top:5%;
+	}
+	#Testimonial-heading
+	{
+		font-weight:700;
+	}
+	.testi
+	{
+		margin-top: 9%;
+		background-color:white;
+		padding:4%;
+		z-index: 1;
+		transform: translateY(40px);
+	}
+	.text-link
+	{
+		color:var(--secondary);
+	}
+	.fas-fa-icons
+	{
+       font-size:48px;
+       color:var(--secondary);
+	}
+	@media screen and (max-width:991px)
+	{
+		.testi
+		{
+			margin-top:9%;
+		}
+	}
+	.testi .testi-innerdiv
+	{
+		display:flex;justify-content: 
+		center;align-items: center;
+		flex-direction: column;
+		padding: 20px;
+	}
+	.testipara
+	{
+		text-align: center;
+	}
+	.testi-heading
+	{
+		font-weight:600;
+	}
+	#Testimonials-mainheading
+	{
+		font-weight: 700;
+	}
+	#Testimonials-submainheading
+	{
+		margin-top:10px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	@media screen and (max-width:780px)
+	{
+		.testi
+		{
+			width:93%;
+		}
+
+	}
+</style>
+<section class="Testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<center><h6 class="font-mont" id="Testimonials-mainheading" style="font-weight: 700;">TESTIMONIALS</h6></center>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<center><h3 class="font-mont" id="Testimonials-submainheading">Living Testimonies</h3></center>
+			</div>
+		</div>
+    </div>
+	<div class="carousel" data-flickity='{ "wrapAround": true }'>
+		<div class="carousel-cell">
+			<h4 class="font-mont">Far far away,behind the word mountains</h4>
+			<p class="font-nunito carousel-text text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			<div class="innercarousel">
+				<div class="carousel-circle"></div>
+				<h5 class="font-mont" style="margin-bottom:0">James campbell</h5>
+				<p class="font-nunito text-muted">Person</p>
+			</div>
+		</div>
+		<div class="carousel-cell">
+			<h4 class="font-mont">Far far away,behind the word mountains</h4>
+			<p class="font-nunito carousel-text text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			<div class="innercarousel">
+				<div class="carousel-circle"></div>
+				<h5 class="font-mont" style="margin-bottom:0">James campbell</h5>
+				<p class="font-nunito text-muted">Person</p>
+			</div>
+		</div>
+		<div class="carousel-cell">
+			<h4 class="font-mont">Far far away,behind the word mountains</h4>
+			<p class="font-nunito carousel-text text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			<div class="innercarousel">
+				<div class="carousel-circle"></div>
+				<h5 class="font-mont" style="margin-bottom:0">James campbell</h5>
+				<p class="font-nunito text-muted">Person</p>
+			</div>
+		</div>
+		<div class="carousel-cell">
+			<h4 class="font-mont">Far far away,behind the word mountains</h4>
+			<p class="font-nunito carousel-text text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			<div class="innercarousel">
+				<div class="carousel-circle"></div>
+				<h5 class="font-mont" style="margin-bottom:0">James campbell</h5>
+				<p class="font-nunito text-muted">Person</p>
+			</div>
+	    </div>
+		<div class="carousel-cell">
+			<h4 class="font-mont">Far far away,behind the word mountains</h4>
+			<p class="font-nunito carousel-text text-muted">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgroove right at the coast of the semantics,a large language ocean.</p>
+			<div class="innercarousel">
+				<div class="carousel-circle"></div>
+				<h5 class="font-mont" style="margin-bottom:0">James campbell</h5>
+				<p class="font-nunito text-muted">Person</p>
+			</div>
+		</div>
+    </div>
+	<div class="container shadow-lg testi">
+		<div class="row">
+			<div class="col-lg-12">
+				<center>
+					<h5 class="font-mont" id="Testimonial-heading">Our Services</h5>
+				</center>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<center>
+					<h3 class="font-mont">Church Services</h3>
+				</center>
+			</div>
+		</div>
+        <div class="row" style="padding-top:3%;">
+         	<div class="col-lg-4 testi-innerdiv">
+         		<i class="fas fa-seedling fas-fa-icons" aria-hidden="true"></i>
+         		<h5 class="font-mont testi-heading">Praise and Worship</h5>
+         		<p class="font-nunito text-muted testipara" style="font-size: 13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+				<div><a class="text-link" href="/"><p>+ Read More</p></a></div>
+         	</div>
+         	<div class="col-lg-4 testi-innerdiv">
+         		<i class='fas fa-church fas-fa-icons'></i>
+         		<h5 class="font-mont testi-heading">Marriage</h5>
+         		<p class="font-nunito text-muted testipara" style="font-size: 13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+				<div><a class="text-link" href="/"><p>+ Read More</p></a></div>
+         	</div>
+         	<div class="col-lg-4 testi-innerdiv">
+         		<i class='fas fa-bible fas-fa-icons'></i>
+         		<h5 class="font-mont testi-heading">Exhortation</h5>
+         		<p class="font-nunito text-muted testipara" style="font-size: 13px;">Far Far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+				<div><a class="text-link" href="/"><p>+ Read More</p></a></div>
+         	</div>
+         </div> 
+	</div>
+</section>
+<style>
+	.footerpart1
+	{
+		background-color:#294e6d;padding:5% 0;color:white;
+	}
+
+	#footerpart1-button
+	{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+		padding-right: 6%;
+	}
+	@media screen and (max-width: 1200px)
+	{
+		#footerpart1-button
+		{
+			display: block;
+			text-align: center;
+			padding: 0;
+		}
+		#footerpart1-heading
+		{
+			padding-top: 10%;
+		}
+	}
+	@media screen and (max-width:650px)
+	{
+		#footerpart1-heading
+		{
+			font-size:2.5rem;
+			padding-top: 10%;
+		}
+	}
+	@media screen and (max-width:400px)
+	{
+		#footerpart1-heading
+		{
+			font-size:3rem;
+			padding-top: 12%;
+		}
+	}
+</style>
+<section class="footerpart1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8"><center><h1 class="font-mont" id="footerpart1-heading">Join with us as we worship the lord</h1></center></div>
+			<div class="col-lg-4" id="footerpart1-button" style=""><button class="button">Join Us</div>
+		</div>
+	</div>
+</section>
+<style>
+	.footerpart2
+	{
+		background-color:var(--primary);
+		padding:3% 5%;
+	}
+	.font-icons
+	{
+		width: 30px;
+		height:30px; 
+		border-radius:35%;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right:5px;
+	}
+	.footerpart2-heading
+	{
+		font-weight:600;
+		margin-bottom:15px;
+	}
+	.footerpart2-inner
+	{
+		display: flex;
+		justify-content: center;
+	}
+	.icons
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.border-line
+	{
+		border-bottom:1px solid var(--secondary);
+	
+		width: fit-content;
+	}
+	@media screen and (max-width: 992px)
+	{
+		.footerpart2-inner
+		{
+			display: block;
+			margin-bottom: 30px;
+		}
+		.icons
+		{
+			justify-content: end;
+		}
+	}
+</style>
+<section class="footerpart2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-lg-4 footerpart2-inner">
+				<div>
+					<h5 class="font-mont footerpart2-heading">CONTACT</h5>
+					<p class="font-nunito border-line">43,Raymouth Rd.Baltmoer,London 3910</p>
+					<p class="font-nunito border-line">+1(123)-456-7890</p>
+					<p class="font-nunito border-line">+1(123)-456-7890</p>
+					<p class="font-nunito border-line">info@mydomain.com</p>
+			   </div>
+			</div>
+			<div class="col-md-4 col-lg-4 footerpart2-inner">
+				<div>
+					<h5 class="font-mont footerpart2-heading">SOURCES</h5>
+					<div class="row">
+						<div class="col-md-6 col-lg-6" style="padding-bottom:20px; ">
+							<p class="font-nunito border-line">About Us</p>
+							<p class="font-nunito border-line">Services</p>
+							<p class="font-nunito border-line">Vision</p>
+							<p class="font-nunito border-line">Mission</p>
+							<p class="font-nunito border-line">Terms</p>
+							<p class="font-nunito border-line">Privacy</p>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<p class="font-nunito border-line">Partners</p>
+							<p class="font-nunito border-line">Bussiness</p>
+							<p class="font-nunito border-line">Careers</p>
+							<p class="font-nunito border-line">Blog</p>
+							<p class="font-nunito border-line">FAQ</p>
+							<p class="font-nunito border-line">creative</p>
+						</div>
+					</div>
+			    </div>
+			</div>
+			<div class="col-md-4 col-lg-4 footerpart2-inner">
+				<div>
+					<h5 class="font-mont" id="footerpart2-heading">LINKS</h5>
+					<p class="font-nunito border-line">Our Vision</p>
+					<p class="font-nunito border-line">About Us</p>
+					<p class="font-nunito border-line">Contact Us</p>
+					<div class="icons">
+						<div class="font-icons" style=""><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="font-icons"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+						<div class="font-icons"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+						<div class="font-icons"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+						<div class="font-icons"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="font-icons"><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+	<script type="text/javascript" src="../js/script.js"></script>
+</html>
